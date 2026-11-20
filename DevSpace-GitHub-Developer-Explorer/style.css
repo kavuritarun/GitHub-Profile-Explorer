@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f7f8fc;
+    color: #171923;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    border-bottom: 1px solid #eceef3;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    width: 38px;
+    height: 38px;
+    background: #202c45;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    font-weight: 800;
+    font-size: 21px;
+}
+
+.brand h2 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.brand h2 span,
+footer h3 span {
+    color: #4263eb;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #777e8e;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #4263eb;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+    color: #626b7d;
+}
+
+.online-dot,
+.live-badge span {
+    height: 8px;
+    width: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 490px;
+    padding: 85px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-label,
+.section-label {
+    color: #4263eb;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.15;
+    letter-spacing: -3px;
+    margin-top: 22px;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #4263eb;
+}
+
+.hero-content p {
+    color: #7c8495;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 22px 0 30px;
+    max-width: 510px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background: #4263eb;
+    color: white;
+    padding: 15px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #304fd1;
+    transform: translateY(-3px);
+}
+
+.explore-btn span {
+    margin-left: 15px;
+    font-size: 17px;
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+    width: 380px;
+    height: 300px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.visual-circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 280px;
+    height: 280px;
+    background: #e8edff;
+}
+
+.circle-two {
+    width: 210px;
+    height: 210px;
+    background: #d6e0ff;
+}
+
+.visual-card {
+    width: 290px;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(40,60,120,0.13);
+    transform: rotate(-4deg);
+}
+
+.visual-icon {
+    width: 45px;
+    height: 45px;
+    background: #4263eb;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.visual-card h2 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.visual-card p {
+    color: #9299a8;
+    font-size: 12px;
+}
+
+.visual-line {
+    height: 1px;
+    background: #eceef3;
+    margin: 22px 0;
+}
+
+.visual-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #747d90;
+    font-size: 10px;
+}
+
+.visual-bottom span:first-child {
+    color: #22a06b;
+}
+
+
+/* DEVELOPERS */
+
+.developers-section {
+    padding: 85px 9%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.section-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.section-top h2 {
+    font-size: 32px;
+    margin: 12px 0;
+    letter-spacing: -1px;
+}
+
+.section-top p {
+    color: #8991a2;
+    font-size: 13px;
+}
+
+.live-badge {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: #e9f9ef;
+    color: #16834d;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* DEVELOPER GRID */
+
+.developer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 23px;
+}
+
+
+/* DEVELOPER CARDS */
+
+.developer-grid > div {
+    background: #ffffff;
+    border: 1px solid #e9ebf1;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.developer-grid > div:hover {
+    transform: translateY(-8px);
+    border-color: #9aafff;
+    box-shadow: 0 15px 35px rgba(54,82,180,0.10);
+}
+
+
+/* PROFILE IMAGE */
+
+.developer-grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #edf0ff;
+    margin-bottom: 18px;
+    transition: 0.3s;
+}
+
+.developer-grid > div:hover img {
+    border-color: #4263eb;
+    transform: scale(1.06);
+}
+
+
+/* USERNAME */
+
+.developer-grid h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #242b3a;
+    overflow-wrap: anywhere;
+}
+
+
+/* PROFILE BUTTON */
+
+.developer-grid a {
+    display: inline-block;
+    background: #f0f3ff;
+    color: #4263eb;
+    text-decoration: none;
+    padding: 11px 23px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.developer-grid a:hover {
+    background: #4263eb;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #202c45;
+    color: white;
+    padding: 30px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer h3 {
+    font-size: 21px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #b1bbd0;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 900px) {
+
+    .hero-visual {
+        width: 300px;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .navbar {
+        padding: 0 6%;
+    }
+
+    .developers-section {
+        padding: 70px 6%;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .navbar {
+        height: 70px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 7%;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-visual {
+        margin-top: 50px;
+    }
+
+    .section-top {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .section-top h2 {
+        font-size: 25px;
+    }
+
+    .developer-grid {
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+        gap: 14px;
+    }
+
+    .developer-grid > div {
+        padding: 22px 10px;
+    }
+
+    .developer-grid img {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .brand h2 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .section-top {
+        flex-direction: column;
+    }
+}
